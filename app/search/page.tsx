@@ -41,8 +41,8 @@ const Page = () => {
         <div className="mt-10 mb-20 flex flex-col gap-10">
           {blogs?.length > 0 && (
             <h2 className="text-center">
-              Search Reuslts for
-              <span className="text-destructive font-semibold">
+              Search Reuslts for &nbsp;
+              <span className="text-red-500 font-semibold">
                 &quot;{query}&quot;
               </span>
             </h2>
