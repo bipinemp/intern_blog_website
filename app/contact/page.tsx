@@ -23,12 +23,14 @@ const Page = () => {
   function onSubmit(data: TConatactSchema, e?: React.BaseSyntheticEvent) {
     e?.preventDefault();
     if (data) {
+      // Toast Notification
       toast(`${data.name} your message is have been sent successfully`, {
         description: getCurrentDate(),
         style: {
           fontSize: "1.2rem",
         },
       });
+      // Reseting all the input fields are successful form submission
       reset();
     }
   }

@@ -11,10 +11,15 @@ export function Search() {
 
   function searchSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    // Reading the value from the input field
     const val = e.target as HTMLFormElement;
     const query = val.query as HTMLInputElement;
+
+    // Initializing the searchParams
     const newParams = new URLSearchParams(searchParams.toString());
 
+    // setting the URL query with the input field value
     if (query.value) {
       newParams.set("query", query.value);
     } else {

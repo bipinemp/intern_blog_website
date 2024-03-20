@@ -76,6 +76,7 @@ const Page = async ({ params: { id } }: PageParams) => {
 
 export default Page;
 
+// Provide dynamic Id's during the Build process for Static Site Generation
 export async function generateStaticParams() {
   const res = await axios.get(`${process.env.BACKEND_BASE_URL}/posts`);
 
