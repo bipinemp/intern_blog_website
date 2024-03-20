@@ -4,7 +4,7 @@ import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { getCurrentDate } from "@/functions/getCurrentDate";
+import { getCurrentDate } from "@/lib/getCurrentDate";
 import { TConatactSchema, conatactSchema } from "@/zodSchemas/ContactType";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";

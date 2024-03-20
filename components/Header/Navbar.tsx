@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Phone } from "lucide-react";
 import { Search } from "../Search";
 import { DarkLight } from "../DarkLightMode";
-import { Suspense } from "react";
 
 const Navbar = () => {
   return (
@@ -23,9 +22,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="w-full sm:w-fit">
-          <Suspense fallback={<p>...</p>}>
-            <Search />
-          </Suspense>
+          <Search />
         </li>
         <li className="flex items-center gap-2">
           <Link href={"/contact"}>

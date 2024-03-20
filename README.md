@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blogify
 
-## Getting Started
+Blogify is a simple blog website built with Next.js. It allows users to view a list of blog posts , read individual posts in detail , search for a particular blog post also and a contact form to send message to the Website Owner.
 
-First, run the development server:
+## Project Structure
+
+The project follows a standard Next.js structure:
+
+- `app/`: This directory contains all the page components. Each file corresponds to a route on the website.
+- `components/`: This directory contains reusable React components that are used across different pages.
+- `public/`: This directory contains static files like images.
+- `lib/`: This directory contains the reuslable functions and instances.
+- `zodSchemas/`: This directory contains zod Schemas/Types used for Contact Form.
+- `actions/`: This directory contains function to call backend api and sending response.
+
+## Development Choices
+
+The project uses Next.js 14.1.4 version for its support for server-side rendering, static site generation and incremental site regeneration which is great for SEO.
+
+The blog posts are fetched from a JSON placeholder API and displayed on the website. The website also includes dynamic routing to display individual blog posts.
+
+## Running the Application Locally
+
+Follow these steps to run the application locally:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/bipinemp/intern_blog_website.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd intern_blog_website
+```
+
+3. Install all the required dependencies:
+
+```bash
+npm install
+```
+
+4. Run the Dev Server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Go to the [http://localhost:3000/](http://localhost:3000/) in the Browser
