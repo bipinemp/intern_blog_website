@@ -3,12 +3,12 @@ import Logo from "@/public/images/logo.png";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Phone } from "lucide-react";
-import { Search } from "../Search";
+import { Search } from "./Search";
 import { DarkLight } from "../DarkLightMode";
 
 const Navbar = () => {
   return (
-    <nav className="bg-inherit mx-auto md:px-10 xl:px-28 2xl:px-52 sticky top-0 inset-x-0 z-40 flex justify-between items-center px-3 py-5 border-b border-b-zinc-400">
+    <nav className="bg-inherit mx-auto md:px-10 xl:px-52 sticky top-0 inset-x-0 z-40 flex justify-between items-center px-3 py-5 border-b border-b-zinc-400">
       <ul className="relative max-w-[1920px] w-full mx-auto flex gap-3 sm:gap-0 items-center justify-between">
         <li className="hidden sm:block">
           <Link href={"/"}>
@@ -30,7 +30,7 @@ const Navbar = () => {
               size={"icon"}
               className="dark:bg-transparent dark:border dark:border-zinc-700"
             >
-              <Phone className="w-6 h-6 dark:text-zinc-300" />
+              <Phone className="h-[1.2rem] w-[1.2rem] dark:text-zinc-300" />
             </Button>
           </Link>
           <DarkLight />

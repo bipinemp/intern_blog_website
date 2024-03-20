@@ -19,7 +19,7 @@ const BlogCard = ({ blog, blogDetails }: BlogCardProps) => {
   return (
     <div
       className={cn(
-        "transition min-h-[140px] bg-zinc-50 dark:bg-transparent flex flex-col gap-3 py-4 px-5 border-[2px] border-input rounded-lg shadow-md",
+        "transition min-h-[140px] bg-zinc-50 dark:bg-transparent flex flex-col gap-3 py-5 px-7 border-[2px] border-input rounded-lg shadow-md",
         {
           "hover:bg-zinc-100 hover:border-primary cursor-pointer": !blogDetails,
         }
