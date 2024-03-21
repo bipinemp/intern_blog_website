@@ -2,7 +2,7 @@ import Container from "../Container";
 import BlogCard from "./BlogCard";
 
 const BlogsListing = async () => {
-  // Implementing ISR Building after every 1000 seconds
+  // Implementing ISR Building SSG after every 1000 seconds
   const response = await fetch(`${process.env.BACKEND_BASE_URL}/posts`, {
     next: { revalidate: 1000 },
   });
