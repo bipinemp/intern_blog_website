@@ -9,7 +9,7 @@ const notFound = () => {
         Oops! Page Not Found
       </h1>
       <p className="text-red-500 font-semibold">
-        We're sorry, but the page you were looking for does not exist.
+        We&apos;re sorry, but the page you were looking for does not exist.
       </p>
       <div className="flex items-center gap-3">
         <ChevronLeft className="w-5 h-5" />
