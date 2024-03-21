@@ -41,7 +41,7 @@ cd intern_blog_website
 npm install
 ```
 
-4. Make a .env file in the root and put these:
+4. Make a .env file in the root of the project and put these values:
 
 ```bash
 BACKEND_BASE_URL=Your_Backend_URL
