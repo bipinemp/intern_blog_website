@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="bg-inherit mx-auto md:px-10 xl:px-52 sticky top-0 inset-x-0 z-40 flex justify-between items-center px-3 py-5 border-b border-b-zinc-400">
       <ul className="relative max-w-[1920px] w-full mx-auto flex gap-3 sm:gap-0 items-center justify-between">
-        <li className="hidden sm:block">
+        <li className="">
           <Link href={"/"}>
             <Image
               src={Logo}
@@ -33,9 +33,10 @@ const Navbar = () => {
           <Link href={"/contact"}>
             <Button
               size={"icon"}
-              className="dark:bg-transparent dark:border dark:border-zinc-700"
+              className="border border-gray-400 h-8 w-8 sm:h-10 sm:w-10"
+              variant={"outline"}
             >
-              <Phone className="h-[1.2rem] w-[1.2rem] dark:text-zinc-300" />
+              <Phone className="h-[1.2rem] w-[1.2rem] text-gray-700 dark:text-zinc-100" />
             </Button>
           </Link>
           <DarkLight />
