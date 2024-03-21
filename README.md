@@ -41,10 +41,17 @@ cd intern_blog_website
 npm install
 ```
 
-4. Run the Dev Server:
+4. Make a .env file in the root and put these:
+
+```bash
+BACKEND_BASE_URL=Your_Backend_URL
+NEXT_PUBLIC_BACKEND_BASE_URL=Your_Backend_URL
+```
+
+5. Run the Dev Server:
 
 ```bash
 npm run dev
 ```
 
-5. Go to the [http://localhost:3000/](http://localhost:3000/) in the Browser
+6. Go to the [http://localhost:3000/](http://localhost:3000/) in the Browser
