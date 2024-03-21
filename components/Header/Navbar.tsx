@@ -2,9 +2,10 @@ import Image from "next/image";
 import Logo from "@/public/images/logo.png";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Phone } from "lucide-react";
+import { Loader2, Phone } from "lucide-react";
 import { Search } from "./Search";
 import { DarkLight } from "../DarkLightMode";
+import { Suspense } from "react";
 
 const Navbar = () => {
   return (
@@ -22,7 +23,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="w-full sm:w-fit">
-          <Search />
+          <Suspense
+            fallback={<Loader2 className="w-6 h-6 animate-spin text-primary" />}
+          >
+            <Search />
+          </Suspense>
         </li>
         <li className="flex items-center gap-2">
           <Link href={"/contact"}>
